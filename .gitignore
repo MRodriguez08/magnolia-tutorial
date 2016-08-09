@@ -4,3 +4,7 @@ magnolia-tutorial-webapp/target/
 magnolia-tutorial-template-module/target/
 magnolia-tutorial-template-module/src/main/webapp/WEB-INF/lib/
 magnolia-tutorial-template-module/.classpath
+magnolia-tutorial-webapp/src/main/webapp/repositories/
+magnolia-tutorial-webapp/src/main/webapp/logs/
+magnolia-tutorial-webapp/src/main/webapp/cache/
+magnolia-tutorial-webapp/src/main/webapp/WEB-INF/classes/

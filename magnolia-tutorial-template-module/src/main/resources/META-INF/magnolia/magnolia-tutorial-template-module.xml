@@ -13,11 +13,10 @@
       <name>core</name>
       <version>5.4.7/*</version>
     </dependency>
-    <!--  Add other dependencies here, e.g the mte (magnolia templating essentials).
+    <!--  Add other dependencies here, e.g the mte (magnolia templating essentials). -->
     <dependency>
       <name>mte</name>
-      <version>0.7/*</version>
-    </dependency>
-    -->
+      <version>0.8/*</version>
+    </dependency> 
   </dependencies>
 </module>

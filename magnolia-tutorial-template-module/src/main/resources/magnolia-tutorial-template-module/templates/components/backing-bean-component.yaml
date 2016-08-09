@@ -1,0 +1,5 @@
+templateScript: /magnolia-tutorial-template-module/templates/components/backing-bean-component.ftl
+renderType: freemarker
+dialog: magnolia-tutorial-template-module:components/backing-bean-component
+title: Backing Bean component
+modelClass: com.globant.magnolia.models.BackingBeanComponentModel

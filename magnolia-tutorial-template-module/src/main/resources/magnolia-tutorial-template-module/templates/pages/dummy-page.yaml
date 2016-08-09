@@ -2,9 +2,12 @@ templateScript: /magnolia-tutorial-template-module/templates/pages/dummy-page.ft
 renderType: freemarker
 visible: true
 dialog: magnolia-tutorial-template-module:pages/dummy-page-properties
+title: Base Template
 areas:
   main:
     renderType: freemarker
     availableComponents:
       dummy-component:
         id: magnolia-tutorial-template-module:components/dummy-component
+      backing-bean-component:
+        id: magnolia-tutorial-template-module:components/backing-bean-component

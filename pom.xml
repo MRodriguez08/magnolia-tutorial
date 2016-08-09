@@ -11,6 +11,10 @@
 	<properties>
 		<magnoliaVersion>5.4.7</magnoliaVersion>
 		<javaVersion>1.8</javaVersion>
+		<magnoliaDamVersion>2.1.2</magnoliaDamVersion>
+		<magnoliaSiteVersion>1.0.7</magnoliaSiteVersion>
+		<magnoliaTemplatingKitVersion>0.8</magnoliaTemplatingKitVersion>
+		<magnoliaTemplatingEssentialsVersion>0.8</magnoliaTemplatingEssentialsVersion>
 	</properties>
 
 	<!-- Fill the following in, so you can use the release plugin -->
@@ -46,9 +50,131 @@
 				<version>4.11</version>
 				<scope>test</scope>
 			</dependency>
+
+			<dependency>
+				<groupId>info.magnolia.templating</groupId>
+				<artifactId>magnolia-templating-kit</artifactId>
+				<version>${magnoliaTemplatingKitVersion}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>info.magnolia.templating</groupId>
+				<artifactId>magnolia-templating-essentials-models</artifactId>
+				<version>${magnoliaTemplatingEssentialsVersion}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>info.magnolia.templating</groupId>
+				<artifactId>magnolia-templating-essentials-imaging</artifactId>
+				<version>${magnoliaTemplatingEssentialsVersion}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>info.magnolia.dam</groupId>
+				<artifactId>magnolia-dam-api</artifactId>
+				<version>${magnoliaDamVersion}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>info.magnolia.dam</groupId>
+				<artifactId>magnolia-dam-app</artifactId>
+				<version>${magnoliaDamVersion}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>info.magnolia.dam</groupId>
+				<artifactId>magnolia-dam-compatibility</artifactId>
+				<version>${magnoliaDamVersion}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>info.magnolia.dam</groupId>
+				<artifactId>magnolia-dam-core</artifactId>
+				<version>${magnoliaDamVersion}</version>
+			</dependency>
+
+
+			<dependency>
+				<groupId>info.magnolia.dam</groupId>
+				<artifactId>magnolia-dam-jcr</artifactId>
+				<version>${magnoliaDamVersion}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>info.magnolia.dam</groupId>
+				<artifactId>magnolia-dam-templating</artifactId>
+				<version>${magnoliaDamVersion}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>info.magnolia.dam</groupId>
+				<artifactId>magnolia-dam-imaging</artifactId>
+				<version>${magnoliaDamVersion}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>info.magnolia.site</groupId>
+				<artifactId>magnolia-site-app</artifactId>
+				<version>${magnoliaSiteVersion}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>info.magnolia</groupId>
+				<artifactId>magnolia-standard-templating-kit</artifactId>
+				<version>2.9.4</version>
+			</dependency>
+
+			<dependency>
+				<groupId>info.magnolia</groupId>
+				<artifactId>magnolia-module-standard-templating-kit</artifactId>
+				<version>2.9.4</version>
+			</dependency>
+			<dependency>
+				<groupId>info.magnolia</groupId>
+				<artifactId>magnolia-demo-project</artifactId>
+				<version>2.9.4</version>
+			</dependency>
+			<dependency>
+				<groupId>info.magnolia</groupId>
+				<artifactId>magnolia-theme-pop</artifactId>
+				<version>2.9.4</version>
+			</dependency>
+
+			<dependency>
+				<groupId>info.magnolia</groupId>
+				<artifactId>magnolia-rendering</artifactId>
+				<version>5.4.7</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
+	<dependencies>
+		<dependency>
+			<groupId>info.magnolia.dam</groupId>
+			<artifactId>magnolia-dam</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia.dam</groupId>
+			<artifactId>magnolia-dam-imaging</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia.site</groupId>
+			<artifactId>magnolia-site-app</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-module-standard-templating-kit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-demo-project</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-theme-pop</artifactId>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>
