@@ -1,0 +1,6 @@
+.project
+.settings/
+magnolia-tutorial-webapp/target/
+magnolia-tutorial-template-module/target/
+magnolia-tutorial-template-module/src/main/webapp/WEB-INF/lib/
+magnolia-tutorial-template-module/.classpath
