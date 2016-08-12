@@ -1,0 +1,103 @@
+
+.canvasPanel {
+
+	background: none repeat scroll 0 0 #F9FFF4;
+	padding: 1%;
+	-moz-border-radius: 3px;
+	border-radius: 15px;
+}
+
+#canvasTable {
+
+	border-spacing: 0;
+	background-color: white;
+	font-family: DINWebPro;
+	width: 95%;
+}
+
+#canvasTable td {
+	border: 1px solid black;
+	vertical-align: text-top;
+	text-align: center;
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+	border-radius: 6px 6px 0 0;
+
+}
+
+#canvas{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+#canvasTable td:hover{
+ 	border:1px red solid;
+ }
+
+.canvasTextField {
+	width: 97%;
+	border: hidden;
+}
+
+#keyPartners {
+	min-height: 500px;
+}
+
+#keyActivities {
+	min-height: 200px;
+}
+
+#valueProposition {
+	min-height: 500px;
+}
+#keyResources {
+	min-height: 250px;
+}
+
+#customerRelationship {
+	min-height: 200px;
+}
+
+#keyActivities {
+	min-height: 200px;
+}
+
+#channels {
+	min-height: 250px;
+}
+
+#customerSegments {
+	min-height: 500px;
+}
+
+textarea:focus {
+	outline: none;
+	overflow: hidden;
+}
+
+textarea:hover{
+	background-color: #EBEBEB;
+}
+
+
+
+/*Capabilities*/
+
+.capabilityHeaderCell {
+	padding: 10px 5px 10px 30px;
+	background: white;
+	empty-cells: hide;
+}
+
+.gridCell {
+	text-decoration: none;
+	min-height: 100%;
+	min-width: 100%;
+	color: blue;
+	cursor: pointer;
+}
+
+.gridCell:hover {
+	background-color: gray;
+}

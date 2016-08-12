@@ -23,13 +23,13 @@
 		<!-- Dependencies versions are already imported by parent pom. Requires 
 			"Option A" in the parent pom. -->
 		<dependency>
-			<groupId>info.magnolia</groupId>
-			<artifactId>magnolia-empty-webapp</artifactId>
+			<groupId>info.magnolia.bundle</groupId>
+			<artifactId>magnolia-bundled-webapp</artifactId>
 			<type>pom</type>
 		</dependency>
 		<dependency>
-			<groupId>info.magnolia</groupId>
-			<artifactId>magnolia-empty-webapp</artifactId>
+			<groupId>info.magnolia.bundle</groupId>
+			<artifactId>magnolia-bundled-webapp</artifactId>
 			<type>war</type>
 		</dependency>
 
@@ -64,7 +64,11 @@
 			<artifactId>magnolia-tutorial-template-module</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
-
+		<dependency>
+			<groupId>com.globant.magnolia</groupId>
+			<artifactId>business-canvas</artifactId>
+			<version>1.0.0.SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>
