@@ -50,7 +50,7 @@ public class MyFirstServiceEndpoint<D extends NodeEndpointDefinition> extends Ab
 	public Response readNode(@QueryParam("name") @DefaultValue("anonymous") String userName)
 			throws RepositoryException {
 		String absPath = StringUtils.defaultIfEmpty("", "/");
-		Session session = MgnlContext.getJCRSession("");
+		Session session = MgnlContext.getJCRSession("magnoliaTutorialTemplateModule");
 		if (!(session.nodeExists(absPath))) {
 			return Response.status(Response.Status.NOT_FOUND).build();
 		}
@@ -61,7 +61,7 @@ public class MyFirstServiceEndpoint<D extends NodeEndpointDefinition> extends Ab
 		response.addProperty("message", " hello " + userName + " !!");
 		response.addProperty("statusCode", 200);
 
-		return Response.ok(response).build();
+		return Response.ok(response.toString()).build();
 	}
 
 }

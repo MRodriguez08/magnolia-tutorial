@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE module SYSTEM "module.dtd" >
 <module>
-	<name>business-canvas</name>
-	<displayName>business-canvas</displayName>
-	<description>business-canvas</description>
-	<class>info.magnolia.module.BusinessCanvasModuleHandler</class>
-	<version>1.0.0-SNAPSHOT</version>
+    <name>business-canvas</name>
+    <displayName>business-canvas</displayName>
+    <description>business-canvas</description>
+    <class>info.magnolia.module.BusinessCanvasModuleHandler</class>
+    <version>1.0.0-SNAPSHOT</version>
 
-	<components>
-		<id>main</id>
-		<component>
-			<type>info.magnolia.module.businessCanvas.view.BusinessCanvasView</type>
-			<implementation>info.magnolia.module.businessCanvas.view.BusinessCanvasViewImpl</implementation>
-		</component>
-	</components>
+    <components>
+        <id>main</id>
+        <component>
+            <type>info.magnolia.module.businessCanvas.view.BusinessCanvasView</type>
+            <implementation>info.magnolia.module.businessCanvas.view.BusinessCanvasViewImpl</implementation>
+        </component>
+    </components>
 
-	<dependencies>
-		<dependency>
-			<name>core</name>
-			<version>5.4.7/*</version>
-		</dependency>
-		<dependency>
-			<name>pages</name>
-			<version>5.4.6</version>
-		</dependency>
-	</dependencies>
+    <dependencies>
+        <dependency>
+            <name>core</name>
+            <version>5.4.7/*</version>
+        </dependency>
+        <dependency>
+            <name>pages</name>
+            <version>5.4.6</version>
+        </dependency>
+    </dependencies>
 
-	<repositories>
-		<repository>
-			<name>magnolia</name>
-			<workspaces>
-				<workspace>businessCanvas</workspace>
-			</workspaces>
-		</repository>
-	</repositories>
+    <repositories>
+        <repository>
+            <name>magnolia</name>
+            <workspaces>
+                <workspace>businessCanvas</workspace>
+            </workspaces>
+        </repository>
+    </repositories>
 
 </module>
