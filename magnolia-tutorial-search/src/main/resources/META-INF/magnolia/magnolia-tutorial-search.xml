@@ -7,6 +7,14 @@
   <class>com.globant.magnolia.MagnoliaSearchBundle</class>
   <versionHandler>com.globant.magnolia.setup.MagnoliaSearchBundleVersionHandler</versionHandler>
   <version>${project.version}</version>
+  
+  <components>
+    <id>main</id> <!-- Container ID -->
+    <component>
+      <type>com.globant.magnolia.services.DummyService</type>
+      <implementation>com.globant.magnolia.services.impl.DummyServiceImpl</implementation>
+    </component>
+  </components>
 
   <dependencies>
     <dependency>

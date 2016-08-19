@@ -1,5 +1,6 @@
 package com.globant.magnolia.index;
 
+import javax.inject.Inject;
 import javax.jcr.Node;
 import javax.jcr.NodeIterator;
 import javax.jcr.Session;
@@ -9,11 +10,16 @@ import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
 import org.apache.solr.common.SolrInputDocument;
 
+import com.globant.magnolia.services.DummyService;
+
 import info.magnolia.commands.impl.BaseRepositoryCommand;
 import info.magnolia.context.Context;
 import info.magnolia.context.MgnlContext;
 
 public class BasicSiteIndexCommand extends BaseRepositoryCommand {
+    
+    @Inject
+    private DummyService dummyService;
     
     private static final Logger LOGGER = Logger.getLogger(BasicSiteIndexCommand.class);
  
@@ -37,6 +43,7 @@ public class BasicSiteIndexCommand extends BaseRepositoryCommand {
             solrClient.commit();
             solrClient.close();
             session.logout();
+            LOGGER.info(dummyService.sayHello());
         } catch (Exception e) {
             LOGGER.error(e.getMessage(), e);
             success = false;
