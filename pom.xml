@@ -62,6 +62,13 @@
                 <version>${magnoliaVersion}</version>
             </dependency>
 
+            <!-- Solr -->
+            <dependency>
+                <groupId>org.apache.solr</groupId>
+                <artifactId>solr-solrj</artifactId>
+                <version>5.4.1</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -122,8 +129,13 @@
         </repository>
         <!-- IF YOU NEED MODULES FROM THE ENTERPRISE VERSION, UNCOMMENT THE 
             FOLLOWING REPOSITORY -->
-        <!-- <repository> <id>magnolia.enterprise.releases</id> <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.enterprise.releases</url> 
-            <snapshots> <enabled>false</enabled> </snapshots> </repository> -->
+        <repository>
+            <id>magnolia.enterprise.releases</id>
+            <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.enterprise.releases</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
         <repository>
             <id>vaadin-addons</id>
             <url>http://maven.vaadin.com/vaadin-addons</url>
@@ -133,5 +145,6 @@
     <modules>
         <module>magnolia-tutorial-webapp</module>
         <module>magnolia-tutorial-template-module</module>
+        <module>magnolia-tutorial-search</module>
     </modules>
 </project>

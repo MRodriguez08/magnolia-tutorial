@@ -2,7 +2,7 @@ templateScript: /magnolia-tutorial-template-module/templates/pages/dummy-page.ft
 renderType: freemarker
 visible: true
 dialog: magnolia-tutorial-template-module:pages/dummy-page-properties
-title: Base Template
+title: Mgnl Tutorial - Base Template
 areas:
   main:
     renderType: freemarker

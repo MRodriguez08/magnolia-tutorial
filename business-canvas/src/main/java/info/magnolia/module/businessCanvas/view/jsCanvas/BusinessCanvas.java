@@ -25,10 +25,10 @@ public class BusinessCanvas extends AbstractJavaScriptComponent {
 			/**
 			 * 
 			 */
-			private static final long serialVersionUID = 1L;
+            private static final long serialVersionUID = 1L;
 
-			@Override
-			public void call(JsonArray arguments) {
+            @Override
+            public void call(JsonArray arguments) {
 				// TODO Auto-generated method stub
 				
 			}

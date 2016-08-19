@@ -132,6 +132,11 @@ Number of occurrences: %o%n
   <category name="info.magnolia">
     <priority value="INFO" />
   </category>
+  
+  <!-- Magnolia categories -->
+  <category name="com.globant">
+    <priority value="DEBUG" />
+  </category>
 
   <!-- Activation - additivity is true so logs also go to sub-categories' appenders -->
   <category name="info.magnolia.cms.exchange" additivity="true">
