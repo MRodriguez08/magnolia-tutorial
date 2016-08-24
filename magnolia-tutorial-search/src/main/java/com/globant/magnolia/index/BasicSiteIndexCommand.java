@@ -9,16 +9,12 @@ import org.apache.log4j.Logger;
 import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.common.SolrInputDocument;
 
-import com.globant.magnolia.services.DummyService;
 import com.globant.magnolia.services.SolrClientFactory;
 import info.magnolia.commands.impl.BaseRepositoryCommand;
 import info.magnolia.context.Context;
 import info.magnolia.context.MgnlContext;
 
 public class BasicSiteIndexCommand extends BaseRepositoryCommand {
-    
-    @Inject
-    private DummyService dummyService;
     
     @Inject
     private SolrClientFactory solrClientService;
@@ -45,7 +41,6 @@ public class BasicSiteIndexCommand extends BaseRepositoryCommand {
             solrClient.commit();
             solrClient.close();
             session.logout();
-            LOGGER.info(dummyService.sayHello());
         } catch (Exception e) {
             LOGGER.error(e.getMessage(), e);
             success = false;

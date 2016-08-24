@@ -52,14 +52,14 @@
 			<groupId>info.magnolia.ui</groupId>
 			<artifactId>magnolia-ui-vaadin-common-widgets</artifactId>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/org.json/json -->
-<dependency>
-    <groupId>org.json</groupId>
-    <artifactId>json</artifactId>
-    <version>20160212</version>
-</dependency>
-		
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20160212</version>
+		</dependency>
+
 
 	</dependencies>
 
