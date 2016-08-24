@@ -14,6 +14,10 @@
       <type>com.globant.magnolia.services.DummyService</type>
       <implementation>com.globant.magnolia.services.impl.DummyServiceImpl</implementation>
     </component>
+    <component>
+      <type>com.globant.magnolia.services.SolrClientFactory</type>
+      <implementation>com.globant.magnolia.services.impl.SolrClientFactoryImpl</implementation>
+    </component>
   </components>
 
   <dependencies>

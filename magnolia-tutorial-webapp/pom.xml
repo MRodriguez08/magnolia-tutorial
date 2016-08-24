@@ -71,7 +71,7 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-        <dependency>
+        <dependency> 
             <groupId>com.globant.magnolia</groupId>
             <artifactId>business-canvas</artifactId>
             <version>1.0.0.SNAPSHOT</version>

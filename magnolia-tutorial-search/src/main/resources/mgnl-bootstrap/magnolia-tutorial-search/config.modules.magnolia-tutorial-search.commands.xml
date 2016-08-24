@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node sv:name="commands" xmlns:sv="http://www.jcp.org/jcr/sv/1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<sv:property sv:name="jcr:primaryType" sv:type="Name">
+		<sv:value>mgnl:content</sv:value>
+	</sv:property>
+	<sv:property sv:name="jcr:uuid" sv:type="String">
+		<sv:value>3d4866e8-cea6-4fd5-afac-bafb5acc4e3b</sv:value>
+	</sv:property>
+	<sv:property sv:name="jcr:createdBy" sv:type="String">
+		<sv:value>admin</sv:value>
+	</sv:property>
+	<sv:property sv:name="mgnl:created" sv:type="Date">
+		<sv:value>2016-08-24T12:32:29.566-03:00</sv:value>
+	</sv:property>
+	<sv:property sv:name="mgnl:createdBy" sv:type="String">
+		<sv:value>superuser</sv:value>
+	</sv:property>
+	<sv:property sv:name="mgnl:lastModified" sv:type="Date">
+		<sv:value>2016-08-24T12:32:40.501-03:00</sv:value>
+	</sv:property>
+	<sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+		<sv:value>superuser</sv:value>
+	</sv:property>
+	<sv:node sv:name="mgnltrng">
+		<sv:property sv:name="jcr:primaryType" sv:type="Name">
+			<sv:value>mgnl:content</sv:value>
+		</sv:property>
+		<sv:property sv:name="jcr:uuid" sv:type="String">
+			<sv:value>fdb46ebb-059d-4de6-b173-994e68401c2e</sv:value>
+		</sv:property>
+		<sv:property sv:name="jcr:createdBy" sv:type="String">
+			<sv:value>admin</sv:value>
+		</sv:property>
+		<sv:property sv:name="mgnl:created" sv:type="Date">
+			<sv:value>2016-08-24T12:32:40.501-03:00</sv:value>
+		</sv:property>
+		<sv:property sv:name="mgnl:createdBy" sv:type="String">
+			<sv:value>superuser</sv:value>
+		</sv:property>
+		<sv:property sv:name="mgnl:lastModified" sv:type="Date">
+			<sv:value>2016-08-24T12:32:58.318-03:00</sv:value>
+		</sv:property>
+		<sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+			<sv:value>superuser</sv:value>
+		</sv:property>
+		<sv:node sv:name="indexpages">
+			<sv:property sv:name="jcr:primaryType" sv:type="Name">
+				<sv:value>mgnl:contentNode</sv:value>
+			</sv:property>
+			<sv:property sv:name="jcr:uuid" sv:type="String">
+				<sv:value>e3550cdb-0861-469d-81ae-07ded0b3c45c</sv:value>
+			</sv:property>
+			<sv:property sv:name="class" sv:type="String">
+				<sv:value>com.globant.magnolia.index.BasicSiteIndexCommand
+				</sv:value>
+			</sv:property>
+			<sv:property sv:name="jcr:createdBy" sv:type="String">
+				<sv:value>admin</sv:value>
+			</sv:property>
+			<sv:property sv:name="mgnl:created" sv:type="Date">
+				<sv:value>2016-08-24T12:32:58.319-03:00</sv:value>
+			</sv:property>
+			<sv:property sv:name="mgnl:createdBy" sv:type="String">
+				<sv:value>superuser</sv:value>
+			</sv:property>
+			<sv:property sv:name="mgnl:lastModified" sv:type="Date">
+				<sv:value>2016-08-24T12:33:38.251-03:00</sv:value>
+			</sv:property>
+			<sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+				<sv:value>superuser</sv:value>
+			</sv:property>
+		</sv:node>
+	</sv:node>
+</sv:node>

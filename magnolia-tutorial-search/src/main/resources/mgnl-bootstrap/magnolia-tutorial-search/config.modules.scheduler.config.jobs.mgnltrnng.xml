@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node sv:name="mgnltrnng" xmlns:sv="http://www.jcp.org/jcr/sv/1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<sv:property sv:name="jcr:primaryType" sv:type="Name">
+		<sv:value>mgnl:contentNode</sv:value>
+	</sv:property>
+	<sv:property sv:name="jcr:uuid" sv:type="String">
+		<sv:value>dc790da0-86e5-436a-a53a-45ff47481ba0</sv:value>
+	</sv:property>
+	<sv:property sv:name="catalog" sv:type="String">
+		<sv:value>mgnltrng</sv:value>
+	</sv:property>
+	<sv:property sv:name="command" sv:type="String">
+		<sv:value>indexpages</sv:value>
+	</sv:property>
+	<sv:property sv:name="cron" sv:type="String">
+		<sv:value>0/3 * * * * ? *</sv:value>
+	</sv:property>
+	<sv:property sv:name="description" sv:type="String">
+		<sv:value>activate all magnolia training pages</sv:value>
+	</sv:property>
+	<sv:property sv:name="enabled" sv:type="Boolean">
+		<sv:value>true</sv:value>
+	</sv:property>
+	<sv:property sv:name="jcr:createdBy" sv:type="String">
+		<sv:value>admin</sv:value>
+	</sv:property>
+	<sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+		<sv:value>false</sv:value>
+	</sv:property>
+	<sv:property sv:name="mgnl:created" sv:type="Date">
+		<sv:value>2016-08-24T13:38:40.603-03:00</sv:value>
+	</sv:property>
+	<sv:property sv:name="mgnl:createdBy" sv:type="String">
+		<sv:value>superuser</sv:value>
+	</sv:property>
+	<sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+		<sv:value>2016-08-24T13:38:40.608-03:00</sv:value>
+	</sv:property>
+	<sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+		<sv:value>superuser</sv:value>
+	</sv:property>
+	<sv:property sv:name="mgnl:lastModified" sv:type="Date">
+		<sv:value>2016-08-24T13:41:38.443-03:00</sv:value>
+	</sv:property>
+	<sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+		<sv:value>superuser</sv:value>
+	</sv:property>
+	<sv:node sv:name="params">
+		<sv:property sv:name="jcr:primaryType" sv:type="Name">
+			<sv:value>mgnl:contentNode</sv:value>
+		</sv:property>
+		<sv:property sv:name="jcr:uuid" sv:type="String">
+			<sv:value>a1bd1cf8-fc71-45c4-b08f-524dbfae3073</sv:value>
+		</sv:property>
+		<sv:property sv:name="jcr:createdBy" sv:type="String">
+			<sv:value>admin</sv:value>
+		</sv:property>
+		<sv:property sv:name="mgnl:activationStatus" sv:type="Boolean">
+			<sv:value>false</sv:value>
+		</sv:property>
+		<sv:property sv:name="mgnl:created" sv:type="Date">
+			<sv:value>2016-08-24T13:38:40.603-03:00</sv:value>
+		</sv:property>
+		<sv:property sv:name="mgnl:createdBy" sv:type="String">
+			<sv:value>superuser</sv:value>
+		</sv:property>
+		<sv:property sv:name="mgnl:lastActivated" sv:type="Date">
+			<sv:value>2016-08-24T13:38:40.608-03:00</sv:value>
+		</sv:property>
+		<sv:property sv:name="mgnl:lastActivatedBy" sv:type="String">
+			<sv:value>superuser</sv:value>
+		</sv:property>
+		<sv:property sv:name="mgnl:lastModified" sv:type="Date">
+			<sv:value>2016-08-24T13:38:52.282-03:00</sv:value>
+		</sv:property>
+		<sv:property sv:name="mgnl:lastModifiedBy" sv:type="String">
+			<sv:value>superuser</sv:value>
+		</sv:property>
+		<sv:property sv:name="path" sv:type="String">
+			<sv:value>/news</sv:value>
+		</sv:property>
+		<sv:property sv:name="repository" sv:type="String">
+			<sv:value>website</sv:value>
+		</sv:property>
+	</sv:node>
+</sv:node>

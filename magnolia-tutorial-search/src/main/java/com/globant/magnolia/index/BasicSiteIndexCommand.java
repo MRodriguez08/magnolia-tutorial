@@ -7,11 +7,10 @@ import javax.jcr.Session;
 
 import org.apache.log4j.Logger;
 import org.apache.solr.client.solrj.SolrClient;
-import org.apache.solr.client.solrj.impl.HttpSolrClient;
 import org.apache.solr.common.SolrInputDocument;
 
 import com.globant.magnolia.services.DummyService;
-
+import com.globant.magnolia.services.SolrClientFactory;
 import info.magnolia.commands.impl.BaseRepositoryCommand;
 import info.magnolia.context.Context;
 import info.magnolia.context.MgnlContext;
@@ -21,6 +20,9 @@ public class BasicSiteIndexCommand extends BaseRepositoryCommand {
     @Inject
     private DummyService dummyService;
     
+    @Inject
+    private SolrClientFactory solrClientService;
+    
     private static final Logger LOGGER = Logger.getLogger(BasicSiteIndexCommand.class);
  
     public boolean execute(Context context) {
@@ -29,7 +31,7 @@ public class BasicSiteIndexCommand extends BaseRepositoryCommand {
         try {
             // some cool task
             Session session = MgnlContext.getJCRSession("website");
-            SolrClient solrClient = new HttpSolrClient("http://localhost:8983/solr/magnoliatraining");
+            SolrClient solrClient = solrClientService.getClient();
             NodeIterator children = session.getNode("/").getNodes();
             while (children.hasNext()){
                 SolrInputDocument document = new SolrInputDocument();

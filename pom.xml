@@ -146,5 +146,6 @@
         <module>magnolia-tutorial-webapp</module>
         <module>magnolia-tutorial-template-module</module>
         <module>magnolia-tutorial-search</module>
+        <module>business-canvas</module>
     </modules>
 </project>
