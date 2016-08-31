@@ -11,6 +11,7 @@ import javax.jcr.Session;
 import com.vaadin.annotations.JavaScript;
 import com.vaadin.ui.AbstractJavaScriptComponent;
 import com.vaadin.ui.JavaScriptFunction;
+import com.vaadin.ui.UI;
 
 import elemental.json.JsonArray;
 
@@ -67,7 +68,6 @@ public class BusinessCanvasJs extends AbstractJavaScriptComponent {
      */
     public void init() {
         try {
-
             Session jcrSession = MgnlContext.getInstance().getJCRSession("businessCanvas");
             String userName = MgnlContext.getUser().getName();
             if (!jcrSession.nodeExists("/" + pathToCanvas + userName)) {

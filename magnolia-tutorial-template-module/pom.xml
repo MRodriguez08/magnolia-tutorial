@@ -62,6 +62,11 @@
             <artifactId>magnolia-rest-tools</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.globant.magnolia</groupId>
+            <artifactId>magnolia-tutorial-search</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

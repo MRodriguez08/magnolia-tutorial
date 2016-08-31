@@ -10,15 +10,14 @@ import com.vaadin.shared.ui.JavaScriptComponentState;
 public class SearchState extends JavaScriptComponentState {
 
     private static final long serialVersionUID = 1L;
-	public String value;
+    public String value;
 
     public void setValue(String value) {
-		this.value = value;
-	}
-    
-	public String searchResults;
+        this.value = value;
+    }
 
-	public static String SEARCH_RESULTS = "searchResults";
+    public String searchResults;
 
+    public static String SEARCH_RESULTS = "searchResults";
 
 }

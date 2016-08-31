@@ -1,10 +1,16 @@
 package com.globant.magnolia.models;
 
+import javax.inject.Inject;
 import javax.jcr.Node;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.solr.client.solrj.SolrClient;
+import org.json.JSONArray;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.globant.magnolia.services.SearchService;
+import com.globant.magnolia.services.SolrClientFactory;
 
 import info.magnolia.jcr.util.PropertyUtil;
 import info.magnolia.rendering.model.RenderingModel;
@@ -14,36 +20,39 @@ import info.magnolia.rendering.template.registry.TemplateDefinitionRegistry;
 
 public class BackingBeanComponentModel<RD extends RenderableDefinition> extends RenderingModelImpl<RD> {
 
-	private static final String TITLE_PROPERTY = "title";
+    @Inject
+    private SearchService searchService;
 
-	public static final Logger log = LoggerFactory.getLogger(BackingBeanComponentModel.class);
+    private static final String TITLE_PROPERTY = "title";
 
-	private String pageTitle;
+    public static final Logger log = LoggerFactory.getLogger(BackingBeanComponentModel.class);
 
-	public BackingBeanComponentModel(Node content, RD definition, RenderingModel<?> parent,
-			TemplateDefinitionRegistry templateDefinitions) throws Exception {
+    private String pageTitle;
 
-		super(content, definition, parent);
-	}
+    public BackingBeanComponentModel(Node content, RD definition, RenderingModel<?> parent,
+            TemplateDefinitionRegistry templateDefinitions) throws Exception {
 
-	@Override
-	public String execute() {
+        super(content, definition, parent);
+    }
 
-		pageTitle = PropertyUtil.getString(content, TITLE_PROPERTY, StringUtils.EMPTY);
-		return super.execute();
-	}
+    @Override
+    public String execute() {
 
-	public String helloCompontent() {
+        pageTitle = PropertyUtil.getString(content, TITLE_PROPERTY, StringUtils.EMPTY);
+        return super.execute();
+    }
 
-		return "helloCompontent 42";
-	}
+    public String helloCompontent() {
+        JSONArray results = searchService.search("a");
+        return "helloCompontent 42";
+    }
 
-	public String getPageTitle() {
-		return pageTitle;
-	}
+    public String getPageTitle() {
+        return pageTitle;
+    }
 
-	public void setPageTitle(String pageTitle) {
-		this.pageTitle = pageTitle;
-	}
+    public void setPageTitle(String pageTitle) {
+        this.pageTitle = pageTitle;
+    }
 
 }
