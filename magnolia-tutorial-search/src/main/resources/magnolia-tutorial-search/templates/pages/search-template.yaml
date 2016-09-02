@@ -1,0 +1,5 @@
+templateScript: /magnolia-tutorial-search/templates/pages/search-template.ftl
+renderType: freemarker
+visible: true
+title: Mgnl Tutorial - Search Template
+dialog: magnolia-tutorial-search:pages/search-template-properties

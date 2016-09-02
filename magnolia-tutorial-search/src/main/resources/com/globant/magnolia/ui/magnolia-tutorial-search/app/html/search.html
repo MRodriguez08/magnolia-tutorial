@@ -1,15 +1,32 @@
 <html>
 <head>
-<link rel="stylesheet"
-	href="${ctx.contextPath}/.resources/magnolia-tutorial-search/webresources/css/style.css">
 </head>
 <body>
-
-	<div id="search">
-		<div class="input-row">
-			<input type="text" id="search-input" />
-		</div>
-		<div class="results-row"></div>
-	</div>
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12">
+    <form>
+     <div class="form-group">
+      <input type="text" class="form-control" id="search-input"
+       placeholder="search...">
+     </div>
+    </form>
+   </div>
+   <div class="col-md-12">
+    <table id="results-table" class="table table-bordered">
+     <thead>
+      <tr>
+       <th>Id</th>
+       <th>Path</th>
+       <th>Title</th>
+       <th>Version</th>
+      </tr>
+     </thead>
+     <tbody>
+     </tbody>
+    </table>
+   </div>
+  </div>
+ </div>
 </body>
 </html>

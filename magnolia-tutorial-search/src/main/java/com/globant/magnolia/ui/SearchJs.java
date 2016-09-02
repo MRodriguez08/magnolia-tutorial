@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.vaadin.annotations.JavaScript;
+import com.vaadin.annotations.StyleSheet;
 import com.vaadin.ui.AbstractJavaScriptComponent;
 import com.vaadin.ui.JavaScriptFunction;
 
@@ -13,7 +14,12 @@ import info.magnolia.objectfactory.Components;
 
 @JavaScript({ 
     "magnolia-tutorial-search/view/js/search.js", 
-    "magnolia-tutorial-search/view/js/search_connector.js" 
+    "magnolia-tutorial-search/view/js/search_connector.js",
+    "magnolia-tutorial-search/view/js/jquery.js",
+    "magnolia-tutorial-search/view/js/bootstrap.min.js" 
+})
+@StyleSheet({
+    "magnolia-tutorial-search/view/css/bootstrap.min.css" 
 })
 public class SearchJs extends AbstractJavaScriptComponent {
 

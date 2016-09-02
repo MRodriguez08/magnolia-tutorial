@@ -5,6 +5,8 @@
     <title>${title}</title>
 
     <link rel="stylesheet" href="${ctx.contextPath}/.resources/magnolia-tutorial-template-module/webresources/css/style.css">
+    <script type="text/javascript"
+        src="${ctx.contextPath}/.resources/magnolia-tutorial-search/webresources/js/bootstrap.min.js"></script>
 
 [@cms.page /]
 </head>
